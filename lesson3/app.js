@@ -4,10 +4,10 @@ var superagent = require('superagent');
 
 var app = express();
 
-app.get('/', function(req, res, next) {
+app.get('/', function (req, res, next) {
   // use superagent to get content from https://cnodejs.org/
   superagent.get('https://cnodejs.org/')
-    .end(function(err, sres) {
+    .end(function (err, sres) {
       // general error handling
       if (err) {
         return next(err);
@@ -16,7 +16,7 @@ app.get('/', function(req, res, next) {
       // sres.text stores HTML content and passing it to cheerio.load to implement a jQuery interface parameter
       var $ = cheerio.load(sres.text);
       var items = [];
-      $('#topic_list .topic_title').each(function(idx, element) {
+      $('#topic_list .topic_title').each(function (idx, element) {
         var $element = $(element);
         items.push({
           title: $element.attr('title'), 
@@ -28,6 +28,6 @@ app.get('/', function(req, res, next) {
     });
 });
 
-app.listen(3000, function() {
+app.listen(3000, function () {
   console.log('app is listening at port 3000');
 });
