@@ -1,0 +1,27 @@
+{
+  "name": "lesson2",
+  "version": "1.0.0",
+  "description": "Lesson2 for node lessons",
+  "main": "index.js",
+  "scripts": {
+    "test": "pcl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myisabella/node-lessions.git"
+  },
+  "keywords": [
+    "node",
+    "lessons"
+  ],
+  "author": "Xiaomin Wei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myisabella/node-lessions/issues"
+  },
+  "homepage": "https://github.com/myisabella/node-lessions#readme",
+  "dependencies": {
+    "express": "^4.13.1",
+    "utility": "^1.4.0"
+  }
+}
