@@ -1,0 +1,28 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "Simple Web Crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "pcl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myisabella/node-lessions.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Crawler"
+  ],
+  "author": "Xiaomin Wei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myisabella/node-lessions/issues"
+  },
+  "homepage": "https://github.com/myisabella/node-lessions#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "express": "^4.13.1",
+    "superagent": "^1.2.0"
+  }
+}
