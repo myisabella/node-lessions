@@ -5,7 +5,7 @@ var utility = require('utility');
 // create express object
 var app = express();
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   // get the q parameter from req.query
   var q = req.query.q;
 
@@ -18,6 +18,6 @@ app.get('/', function(req, res) {
   res.send(sha1Value);
 });
 
-app.listen(3000, function(req, res) {
+app.listen(3000, function (req, res) {
   console.log('app is running at port 3000');
 });
